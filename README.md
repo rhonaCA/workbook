@@ -113,3 +113,41 @@ end
 ```
 
 ## **Q16**
+```ruby
+skills = {
+  Python: 1,
+  Ruby: 2,
+  Bash: 4,
+  Git: 8,
+  HTML: 16,
+  TDD: 32,
+  CSS: 64,
+  JavaScript: 128
+}
+
+print "Please input your skills(Please seperate your skills with comma): "
+# Convert user input into an array
+user_skills = gets.chomp.downcase.gsub(/\s+/, "").split(',')
+
+score = 0
+skills_missing = []
+skills.each do |key, val|
+  if user_skills.include? key.to_s.downcase
+    score += val
+  else
+    skills_missing.push(key)
+  end
+end
+
+puts "Your overall coding skill score is #{score}."
+
+puts "Skills you may want to learn and how they may improve your scores: "
+if skills_missing.empty?
+  puts "None, you are awesome!"
+else
+  skills_missing.each do |skill|
+    puts "#{skill}: #{skills[skill]}"
+  end
+end
+
+```
