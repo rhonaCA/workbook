@@ -97,7 +97,7 @@ arr.each_with_index do |num, index|
 end
 ```
 ## **Q14**
-
+![Preview](Flowchart.jpeg)
 
 
 
