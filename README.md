@@ -70,7 +70,7 @@ I will add .chomp after gets to remove “\n”. Also input from user will alway
     puts “The result is: #{fahrenheit}.”
 ```
 
-**Amended codes:**
+### **Amended code**
 ```ruby
     print "We can convert Celsius to Fahrenheit for you, please enter a Celsius degree: "
     celsius = gets.chomp.to_f
@@ -99,8 +99,19 @@ end
 ## **Q14**
 ![Preview](Flowchart.jpeg)
 
-
-
+### **Pseudocode**
+```
+Start
+Set variables num = 1
+Repeat below until num = 100
+	set variables: x = 1, count = 0
+	Repeat below until x = num
+		If there is no reminder when num divide by x, increment count by 1
+		increment x by 1
+	If count == 2 , print num
+	increment num by 1
+End
+```
 
 ## **Q15**
 
