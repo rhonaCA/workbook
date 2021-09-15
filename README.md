@@ -15,64 +15,40 @@ Erwise is the world’s first graphical point and click browser, written by Kim 
 </ul>
 Unfortunately, due to the deep economic depression in Finland at that time, the students couldn’t gather enough funding to make it a business. In contrast, Mosaic which was released a year after Erwise, was based in Silicon Valley and was able to attract abundant funds to initiate the web revolution. And so Mosaic became the mother of all graphical web browsers. Tim tried to continue to work on Erwise but couldn’t have decent progress as most of the documentations was in Finnish.
 
-<br/>
-
 ### **Dial-up internet access**
 A predecessor to dial-up Internet access was invented by Tom Truscott and Steve Bellovin, both were graduates of Duke University in 1979. It was called USENET. USENET was a UNIX-based system that used a modem and a telephone line to connect to the Internet. The phone line is used to dial the number of an ISP (Internet Service Provider) by the modem which then links up to an internet connection. Because the phone line will be occupied the whole time so the user won't be able to use the telephone when they use the internet. Dial-up needs time to set up a telephone connection (times vary, depends on the location) and the speed is so slow compare to modern internet speeds. It can have the fastest speed of 56 kbps but normally it will be at 40-50 kbps. The connection speeds can be hugely affected by the phone line noise and the quality of the modem. Sprint in US and Pipex in UK was the first to provide dial-up Internet service commercially in 1992. Since then numerous other companies have hopped on the train to provide dial-up internet services such as AOL and NetZero. Although dial-up internet has been replaced with newer technologies such as cable, DSL, even NBN nowadays, we still need to appreciate the improvement and accessibility of technology and the internet it brings us.
-
-<br/>
 
 ### **WiFi**
 WiFi, shorts for wireless fidelity. It is a wireless networking technology that allows different devices to communicate over a wireless signal. Vic Hayes, who has been called the "father of WiFi" established 802.11 standards in 1997 for broadcasting a WiFi signal. This lead to the formation of IEEE802.11, which outlined a set of standards that interpreted communication for WLANS (wireless local area networks). In 1997, 802.11 provided up to 2Mbit/s of data transfer wirelessly between devices. Development on routers to comply with 802.11b had begun and WiFi was introduced for home use in 1999, the link speeds were increased to up to 11Mbit/s as well. WiFi runs mainly at 2.4GHz(802.11b) and 5GHz(802.11a) on electromagnetic waves to communicate data. 2.4GHz has been a popular choice for many years as it worked with most deceives and was cheaper than 5GHz. The performance continues to improve and nowadays WiFi has been evolved to WiFi 6 which was just released in 2020. It has a faster connectivity and linkup speeds up to 9.6GBPs. 
 
-<br/>
-
 ### **Internet Relay Chat (IRC)**
 Internet Relay Chat (IRC) is a text-based chat system. It allows any number of participants to start a discussion. IRC was invented by Jarkko Oikarinen in 1988 at the University of OIulu, Finland. It was intended to replace a program called MUT (MultiUser Talk) on bulletin board system(BBS) called OuluBox. He wanted to improve the BBS software and added some new features such as allow news in USENET style, real time discussions and similar BBS features. The first IRC network was running on tolsun.oulu.fi. which was just a single server. Jyrki Kuoppala, Jarkko's friend installed a server straight after the university agreed to release the IRC code so it could be run outside of Oulu and this became the first "IRC network". As the number of users increased quite quickly, so Jarkko asked his friends at other universities to start running IRC servers to spread the load. IRC had expended across the Internet in November 1988. In mid-1989, there were already around 40 servers worldwide and it reached 12 average users on 38 servers in July 1990.
-
-<br/>
 
 ## **Q2**
 ### **Packet**
 A network packet is a small segment of a larger message. Data sent over Transmission Control Protocol/ Internet Protocol (TCP/IP) is divided into packets. Normally in a size that is about 1.5KB for Ethernet and 64KB for IP payloads. These packets will then recombine by the computer. It is fine to send files or data over the Internet without being divided into packets, but because one computer can only send data to another computer one time at a time, so if the files or data is big, it will take a long time to send over and occupy the whole line, no other computer can use the same line to send information, it has to wait for the previous one finish then it can proceed. It is inefficient to send information like this, so the Internet is using the “packet switching” approach. This allows networking equipment to process packets separately from each other. Also allows the packets to use different network paths to get to the same destination, as long as they arrive at the destination. This approach allows billions of devices to interchange information at the same time thus minimize the times and cost of data transfer.
-
-<br/>
 
 ### **IP address (IPv4 and IPv6)**
 IP (Internet Protocol) is a unique address to identify a device on the network. The IP addresses allow devices to send and receive information on a local network or over the internet. Most IP addresses only contain numbers, but letters have been added recently due to internet usage growth. There are 4 categories of IP addresses are public, private, static and dynamic.
 IPv4 is the original internet protocol that developed in 1983. It is a 32-bit numeric address, separated by a dot(.) and can store more than 4 billion addresses. It is the primary Internet protocol and conveys 94% of the internet traffic.     
 IPv6 is the most recent protocol that was launched in 1998 to satisfy the need for more internet addresses and is also called IPng (Internet Protocol next generation). It is a 128-bit alphanumeric address, separated by a colon(:), also contains hexadecimal. It can store 340 trillion trillion trillion addresses which are more than enough for many many years.
 
-<br/>
-
 ### **Routers and routing**
 Routers are devices that used to tie multiple networks together and performs as a dispatcher. They examine the data receive from a network and alter the way on the packaging, then choose the best route to transfer data packets to a destination. Routers can solve segmentation problems that can be found in LANS and can also serve as connection points between sub-networks in WAN.
 Routing is the procedure of sending the packets from a device of one network to another device of some other network and is accomplished by routers. The process uses routing tables to find the path for a packet base on the IP address and other information from the table, then send the packet to the correct destination or network.
 
-
-<br/>
-
 ### **Domains and DNS**
 A domain is the address of the website, people can type that in the browser URL bar to go to the website. But under the hood, computers only communicate with others with numbers, so here comes DNS (Domain Name System), it will convert the easy remember domain names into Internet Protocol (IP) addresses so they are readable to computers. When I type in a domain name in the web browser, it will send a request to a global network of servers. These servers will search for the name servers that are linked with the domain, and send the request to those name servers which are managed by my hosting company. My hosting company will then send those requests to the computer where the website is stored and that is called a web server. The web server will now get the web page and all information linked with it, then send these back to the browser. With DNS, we don’t have to remember every IP address to visit the websites, we can just use the human readable domain name instead, so much easier.
-
-<br/>
 
 ## **Q3**
 ### **TCP**
 TCP (Transmission Control Protocol), is a communication standard that lets application programs and computing devices interchange information over an IP network, designed to send data and messages across the internet without fail. It provides an authentic, ordered and error-checked communication system. As TCP is always used on top of IP, this internet protocol is also referred to TCP/IP. A three-way handshake connection between a server and a client needs to be established first. Before the communication begins, both the device and the server must be synchronized, and packets need to be acknowledged. This guarantees accuracy and correctness during the process of transmitting data. The connection between a source and its destination will remain live until the transmission is finished. TCP will divide large amounts of data into smaller parts, numbers and reassembles the packets, then send them to other devices on the network.
 TCP/IP protocol supplies a standard way for clients and serves to trade data and it enables systems to communicate even if they are not using the same type of network hardware. It also provides reliable transmission of data with error checking and correction and message acknowledgment for client and server communication.
 
-<br/>
-
 ### **HTTP and HTTPS**
 
 
-
-<br/>
-
 ### **web browsers(requests, rendering and developer tools**
-
-<br/>
 
 ## **Q12**
 1. We want to prompt user for input but there is no question has been asked so the user will not have idea what they should type. I will add below to the beginning of the codes. 
@@ -120,13 +96,11 @@ arr.each_with_index do |num, index|
     end
 end
 ```
-<br/>
-
 ## **Q14**
 
 
 
-<br/>
+
 
 ## **Q15**
 
@@ -137,7 +111,5 @@ else
     puts temperature < 15 ? "It's not raining but cold" : "It's warm but not raining"
 end
 ```
-
-<br/>
 
 ## **Q16**
