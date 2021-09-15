@@ -154,7 +154,7 @@ distance = 10.55
 ```
 
 ### **Boolean**
-Boolean can only has 2 possible values which is true and false and these are returned when two values are compared. 
+Boolean can only have 2 possible values which are true and false and these are returned when two values are compared. 
 ```ruby
 apple = 3
 orange = 5
@@ -171,7 +171,7 @@ end
 ```
 
 ### **Arrays**
-An array store a list of data that can contain different types of data. Data are separated by comma in between them and are enclosed with a a pair of square brackets. The first element of the array has an index of 0.
+An array store a list of data that can contain different types of data. Data are separated by a comma in between them and are enclosed with a pair of square brackets. The first element of the array has an index of 0.
 ```ruby
 my_arr = ["coffee", "milk", 0.31, 50, "hello world"]
 puts my_arr.index("milk")
@@ -180,7 +180,7 @@ puts my_arr.index("milk")
 ```
 
 ### **Hashes**
-A hash is a collection of key-value pairs. In Ruby, it uses ⇒ to assign a value to a key. Each pair of key-value is separated by comma and all pairs are enclosed with a pair of curly braces. 
+A hash is a collection of key-value pairs. In Ruby, it uses ⇒ to assign a value to a key. Each pair of key-value is separated by a comma and all pairs are enclosed with a pair of curly braces.
 ```ruby
 cuisine = {
 	"Sushi" => "Japan", 
@@ -190,7 +190,7 @@ cuisine = {
 ```
 
 ### **Symbols**
-A symbol is a lighter form of strings that is preceded by a colon (:). It use less computer memory compare to a string and have a better performance.
+A symbol is a lighter form of a string that is preceded by a colon (:). It uses less computer memory compare to a string and has a better performance.
 ```ruby
 cuisine = {
 	Sushi: "Japan", 
