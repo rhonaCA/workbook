@@ -51,10 +51,10 @@ TCP/IP protocol supplies a standard way for clients and serves to trade data and
 ### **web browsers(requests, rendering and developer tools**
 
 ## **Q10**
-Data types represent different types of data. In Ruby, they are implemented as classes as Ruby is an Object-Oriented language. data types in Ruby includes string, numbers, boolean, arrays, hashes and symbols.
+Data types represent different types of data. In Ruby, they are implemented as classes as Ruby is an Object-Oriented language. data types in Ruby include string, numbers, boolean, arrays, hashes and symbols.
 
 ### **Strings**
-A string is make up with a group of characters that represent a word or a sentence. They are defined by enclosing with single ('string') or double ("string") quotes. In Ruby, it prefers single quote on string when we are not using string interpolation or special symbols. If the string includes a single quote and you also want to enclose it with single quote, you need to put an escape character (\) before the single quote in the string. Alternatively you can enclose the string with double quote.
+A string is made up of a group of characters that represent a word or a sentence. They are defined by enclosing with single ('string') or double ("string") quotes. In Ruby, it prefers a single quote on a string when we are not using string interpolation or special symbols. If the string includes a single quote and you also want to enclose it with a single quote, you need to put an escape character (\) before the single quote in the string. Alternatively, you can enclose the string with a double quote.
 
 ```ruby
 puts "String Data Type"
