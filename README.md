@@ -50,6 +50,82 @@ TCP/IP protocol supplies a standard way for clients and serves to trade data and
 
 ### **web browsers(requests, rendering and developer tools**
 
+## **Q8**
+Control flow is the order instructions or statements are executed or evaluated when a program is running. Control flow statement allows us to select different outcomes depending on the inputs, the result of the computation or the returned value by other methods. In Ruby, there are couple of different kinds of control flow statements.
+
+### **if statement**
+If a statement takes an expression to check if it is true. The block of codes will only be executed when the expression is true.
+```ruby
+if true
+	print "True"
+end
+```
+
+### **if/else statement**
+It takes an expression to check if it is true. If the expression is true, run the block of codes, otherwise run the codes after the else keywords.
+```ruby
+if true
+	print "True"
+else
+	print "False"
+end
+```
+
+**Ternary operator** can be used as a shorthand version of the if/else statement and it takes three arguments. The first argument can be any expression, as long as it returns a boolean value. The second argument is the codes that will be executed when the expression returns true and the third argument is the codes that will be run when the expression returns false. The syntax looks like this: `boolean ? Execute this code if true : Execute this code if false`
+```ruby
+water = true
+
+puts water ? "No need to water the plants today" : "Water the plants today"
+```
+
+### **elsif statement**
+This is similar to if/else statement but elsif allows us to have more than two options. 
+```ruby
+if true
+	print "True"
+elsif false
+	print "False"
+else
+	print "This is either true or false"
+end
+```
+
+### **unless statement**
+This can be used when we want to evaluate if a statement is false instead of if it's true. 
+```ruby
+need_fuel = false
+
+unless need_fuel
+	puts "No need to get fuel"
+else
+	puts "Time to get some fuel"
+end
+```
+
+We can use a shorthand if there is only a single line code and the syntax looks like this: `codes that will execute unless boolean` 
+```ruby
+need_fuel = false
+puts "No need to get fuel" unless need_fuel
+```
+
+### **case statement**
+A case statement can be used when we have multiple options. We can use elsif statement for the same situation but the case statement creates simpler, neater, easy-to-read branches. We set a variable or an expression and use the case keyword to get the variable input and use by when keyword, which is used to check for the condition. Lastly, we use else to act as a default, if none of the conditions match, the code below else will execute.
+```ruby
+battery = 30
+case battery
+when 0
+	puts "You ran out of battery"
+when 1..30
+	puts "You need to charge your phone, battery is nearly die"
+when 31..80
+	puts "Your phone can last for a while"
+when 81..100
+	puts "Battery is almost full, no need to worry about it"
+else
+	puts "Error! Invalid value (#{battery})"
+end
+```
+
 ## **Q10**
 Data types represent different types of data. In Ruby, they are implemented as classes as Ruby is an Object-Oriented language. data types in Ruby include string, numbers, boolean, arrays, hashes and symbols.
 
