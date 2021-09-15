@@ -50,6 +50,79 @@ TCP/IP protocol supplies a standard way for clients and serves to trade data and
 
 ### **web browsers(requests, rendering and developer tools**
 
+## **Q10**
+Data types represent different types of data. In Ruby, they are implemented as classes as Ruby is an Object-Oriented language. data types in Ruby includes string, numbers, boolean, arrays, hashes and symbols.
+
+### **Strings**
+A string is make up with a group of characters that represent a word or a sentence. They are defined by enclosing with single ('string') or double ("string") quotes. In Ruby, it prefers single quote on string when we are not using string interpolation or special symbols. If the string includes a single quote and you also want to enclose it with single quote, you need to put an escape character (\) before the single quote in the string. Alternatively you can enclose the string with double quote.
+
+```ruby
+puts "String Data Type"
+puts 'String Data Type'
+puts 'I\'m a string'
+
+# output:
+# String Data Type
+# String Data Type
+# I'm a string
+```
+
+### **Numbers**
+A Number is a series of digits with a dot as a decimal mark. There are two main kinds of numbers in Ruby: integers and floats. Integers are whole numbers while floats are fractions in decimal format.
+```ruby
+# Integers
+age = 32
+
+# Floats
+distance = 10.55
+```
+
+### **Boolean**
+Boolean can only has 2 possible values which is true and false and these are returned when two values are compared. 
+```ruby
+apple = 3
+orange = 5
+
+if apple > orange
+	puts "Apple is more expensive than orange"
+elsif apple == orange
+	puts "Apple is same price as orange"
+else
+	puts "Apple is cheaper then orange"
+end
+
+# output: Apple is cheaper then orange
+```
+
+### **Arrays**
+An array store a list of data that can contain different types of data. Data are separated by comma in between them and are enclosed with a a pair of square brackets. The first element of the array has an index of 0.
+```ruby
+my_arr = ["coffee", "milk", 0.31, 50, "hello world"]
+puts my_arr.index("milk")
+
+# output: 1
+```
+
+### **Hashes**
+A hash is a collection of key-value pairs. In Ruby, it uses ⇒ to assign a value to a key. Each pair of key-value is separated by comma and all pairs are enclosed with a pair of curly braces. 
+```ruby
+cuisine = {
+	"Sushi" => "Japan", 
+	"Curry" => "India", 
+	"Congee" => "China"
+}
+```
+
+### **Symbols**
+A symbol is a lighter form of strings that is preceded by a colon (:). It use less computer memory compare to a string and have a better performance.
+```ruby
+cuisine = {
+	Sushi: "Japan", 
+	Curry: "India", 
+	Congee: "China"
+}
+```
+
 ## **Q12**
 1. We want to prompt user for input but there is no question has been asked so the user will not have idea what they should type. I will add below to the beginning of the codes. 
 
@@ -78,8 +151,6 @@ I will add .chomp after gets to remove “\n”. Also input from user will alway
     puts "The result is #{fahrenheit}"
 ```
 
-<br/>
-
 ## **Q13**
 ```ruby
 arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
@@ -96,6 +167,7 @@ arr.each_with_index do |num, index|
     end
 end
 ```
+
 ## **Q14**
 ![Preview](Flowchart.jpeg)
 
