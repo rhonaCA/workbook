@@ -50,6 +50,25 @@ TCP/IP protocol supplies a standard way for clients and serves to trade data and
 
 ### **web browsers(requests, rendering and developer tools**
 
+## **Q6**
+### **Ruby**
+Ruby is designed and developed by Yukihiro “Matz” Matsumoto in 1995, inspired by his favorite languages (Perl, Smalltalk, Eiffel, Ada, and Lisp) to form a new language that focuses on simplicity and productivity. It can be used for webpages, interfacing with databases and generating dynamic content. Ruby is an object-oriented programming language (OOP) that uses classes as blueprints for objects. In Ruby, everything is an object. Strings, numbers, and Boolean are all objects. The syntax is like human language, easy to read and write, also very clean: no need to put semicolons (;) at the end of each statement if we put each statement on a new line. Indentation is not needed for Ruby, but we still use it for readability. Ruby use # to start a comment on a new line or after a statement. For naming method, Ruby uses class keyword with PascalCase to define a class, and def keyword with snake_case to define a method.
+
+**Pros**
+Ruby is a dynamic programming language with an elegant syntax that is easy to read, write and learn. As the language focuses on simplicity and productivity and is an open-source language, it can be time and cost efficient in creating web applications. It is relatively lightweight and is portable across different platforms: Linux, Windows, Mac, iOS, Android, etc. There are heaps of gems, libraries and plugins to make software developers' life easier. It is a very mature and well-maintained language, suitable for web development, system administration, scripting and databases.
+
+**Cons**
+Ruby has a slower performance compared to some languages like Java, C or C++ because Ruby is an interpreted language, while Java, C and C++ are compiled languages. But base on what we use it for, it may not be something we need to worry about. Ruby is good enough on web applications but might not be a good choice for machine learning. Ruby is extremely flexible, for example we can use and, or, not instead of or &&, || and !. And there is often more than one way of doing things, developers can come up with different solutions to solve the same problem, even with unconventional ones. That means it can be hard to detect any errors and debug.
+
+### **JavaScript**
+JavaScript(JS) is designed by Brendan Eich of Netscape back in the mid-1990s. Compare to Ruby which is a class-based object-oriented language, JS is a prototype-based object-oriented language. There are no classes in JS rather it uses the constructor function to define behaviors and reuse them by the prototype. Along the side of HTML and CSS, JS is one of the key technologies of World Wide Webs(WWW). JS converts the web page from a static page into an interactive page to improve the user experiences. Besides adding interactive on the web pages, it can also use on building web servers, developing server applications using Node.js, and on game development. Unlike Ruby, there is a set of rules on JS syntax: Whitespace can impact semantics as there is a feature called automatic semicolon insertion. This feature will add semicolons automatically after certain ECMAScript statements such as variable statements, expression statements, etc. That's why proper indentation is important. JS uses var, let and const keywords pair with camelCase to declare and naming a variable.
+
+**Pros**
+Since JS is an interpreted language and also a client-side script, it can be run immediately within the client-side browser which minimizes the speed it takes to process, and because of the client-side aspect, it reduces the demand on servers. It is easy to learn and implement due to its simple structure. It works well with other languages and can be used on different applications. Same as Ruby, JS has loads of third-party add-ons to extend the functionality. Due to its popularity, there are numerous resources online to help us work with this language.
+
+**Cons**
+Although client-side is classified as one of the pros it can be a con as well. Because the JS codes are always viewable to the user, some may use them for spiteful purposes, such as using the source code without authentication, amend codes to jeopardize the security of data over the website. Because of these reasons, some people choose to disable JS. The same JS codes can be interpreted differently by different browsers. So we need to test on various platforms to ensure the codes run correctly.
+
 ## **Q8**
 Control flow is the order instructions or statements are executed or evaluated when a program is running. Control flow statement allows us to select different outcomes depending on the inputs, the result of the computation or the returned value by other methods. In Ruby, there are couple of different kinds of control flow statements.
 
