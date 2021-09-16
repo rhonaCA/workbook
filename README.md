@@ -50,23 +50,185 @@ TCP/IP protocol supplies a standard way for clients and serves to trade data and
 
 ### **web browsers(requests, rendering and developer tools**
 
+## **Q4**
+Data structures is a particular way to organize and access data. 
+### **Array**
+An array is an ordered, integer-indexed (starts at 0) collection of any objects, it can hold a string, integer, float, hash, symbol and other array objects. It uses a contiguous block of memory to store the objects without any gap between them. We can create a new array with with or without objects in it, use comma (,) to separate the objects and enclosed them with square brackets [ ].
+```ruby
+arr1 = []
+arr2 = ["orange", 123, 10.5, true, {HTML: 16}]
+```
+Or calling the new method with arguments to create a new array. We can define the initial size and set a default object of the array.
+```ruby
+Array.new(5, "new")
+
+# => ["new", "new", "new", "new", "new"]
+```
+The easiest way to access the elements in an array is by utilizing the index:
+```ruby
+arr = ["orange", "apple", "coffee"]
+arr[0]  # => orange
+arr[1]  # => apple
+arr[2]  # => coffee
+```
+But there are also lots of methods that can be used to retrieve the elements:
+```ruby
+arr = ["orange", "apple", "coffee", "tomato", "lettuce"]
+arr.first  # => orange
+arr.last(2) # => tomato, lettuce
+arr.slice(3) # => tomato
+```
+With all the built-in methods in Ruby, they allow us to add, remove, access and loop over the elements in an array easily. Without array, we need more variables to achieve the same result, our codes won't' be DRY. It can also help to collect items and gather results from running a loop.
+```ruby
+arr = [10, 56, 28, 39, 88, 1, 4, 32, 21, 40]
+num_list = []
+
+arr.each do |num|
+    if num > 15
+        num_list.push(num)
+    end
+end
+
+print num_list
+
+# => [56, 28, 39, 88, 32, 21, 40]
+```
+
+### **Hashes**
+A Hash is a collection of key-value pairs. They are similar to an array but unlike array uses integers as its index, we can use any object type as the key likes a string, integer, symbol etc. We can create a Hash by calling the new method:
+```ruby
+h = Hash.new
+```
+Or create a Hash with initial entries. A Hash is enclosed by curly braces { }, inside can be as many key-value pairs as you like and they are separated by a comma. The old syntax is using the "hash rocket" (⇒) in the key-value pair:
+```ruby
+h = { "author" => "J.K. Rowling", "books" => "Harry Potter Series"}
+```
+We can also use a symbol for a Hash key, it is the conventional way as using a symbol instead of a string is more efficient in memory.
+```ruby
+h = { authro: "J.K. Rowling", books: "Harry Potter Series", genre: "fantasy"}
+puts h[:genre]
+
+# => fantasy
+```
+We can use Hash to count characters in a string as well:
+```ruby
+str = "aakkllsaagh"
+count = {}
+count.default = 0
+str.chars.each do |letter|
+    count[letter] += 1
+end
+
+p count
+
+# => {"a"=>4, "k"=>2, "l"=>2, "s"=>1, "g"=>1, "h"=>1}
+```
+
+### **Stack**
+A stack is like a stack of plates, we add new plates on top of the plates that are already there. And when we remove a plate, we take it from the top of the stack. In computer science, we say push instead of add, pop instead of remove. Often we can hear LIFO (Last In First Out) regards to stack and because of that there is no indexing in stack. Here's a simple stack implementation in Ruby:
+```ruby
+class Stack
+    attr_reader :items
+
+    def initialize
+        @items = []
+    end
+
+    def push(item)
+        @items.push(item)
+    end
+
+    def pop
+        @items.pop
+    end
+
+    def size
+        puts @items.length
+     end
+
+    def to_s
+        @items
+    end
+    
+end
+```
+We create a new Stack object by calling the new method:
+```ruby
+stack = Stack.new
+```
+We then use the push method to add an item to the stack and use pop method to remove an item from the stack. To get the number of items in the stack, we use the size method:
+```ruby
+stack.push("apple")
+# => @items = ["apple"]
+stack.push("orange")
+# => @items = ["apple", "orange"]
+stack.pop
+# => @items = ["apple"]
+stack.size
+# => 2
+```
+We can use a stack to keep track of work left to do and leaving the most recent on top. Please see the below example. I have an empty array to keep my to-do tasks and a class variable count to keep track of how many tasks are in total after I add or remove tasks.
+```ruby
+class Stack
+    attr_reader :to_do
+
+    @@count = 0
+
+    def self.count
+        @@count
+    end
+
+    def initialize
+        @to_do = []
+    end
+
+    def push(item)
+        @to_do.push(item)
+        self.class.count += 1
+    end
+
+    def pop
+        @to_do.pop
+        self.class.count -= 1
+    end
+
+    def self.count=(value)
+        @@count = value
+    end
+
+    def to_s
+        puts "You have #{@@count} items left on your to-do list, including #{@to_do.join(", ")}."
+    end
+end
+
+to_do = Stack.new
+to_do.push("finish workbook")
+to_do.push("cook dinner")
+to_do.push("read Harry Potter")
+to_do.to_s 
+# => You have 3 items left on your to-do list, including finish workbook, cook dinner, read Harry Potter.
+to_do.pop
+to_do.to_s
+# => You have 2 items left on your to-do list, including finish workbook, cook dinner.
+```
+
 ## **Q6**
 ### **Ruby**
 Ruby is designed and developed by Yukihiro “Matz” Matsumoto in 1995, inspired by his favorite languages (Perl, Smalltalk, Eiffel, Ada, and Lisp) to form a new language that focuses on simplicity and productivity. It can be used for webpages, interfacing with databases and generating dynamic content. Ruby is an object-oriented programming language (OOP) that uses classes as blueprints for objects. In Ruby, everything is an object. Strings, numbers, and Boolean are all objects. The syntax is like human language, easy to read and write, also very clean: no need to put semicolons (;) at the end of each statement if we put each statement on a new line. Indentation is not needed for Ruby, but we still use it for readability. Ruby use # to start a comment on a new line or after a statement. For naming method, Ruby uses class keyword with PascalCase to define a class, and def keyword with snake_case to define a method.
 
-**Pros**
+#### **Pros**
 Ruby is a dynamic programming language with an elegant syntax that is easy to read, write and learn. As the language focuses on simplicity and productivity and is an open-source language, it can be time and cost efficient in creating web applications. It is relatively lightweight and is portable across different platforms: Linux, Windows, Mac, iOS, Android, etc. There are heaps of gems, libraries and plugins to make software developers' life easier. It is a very mature and well-maintained language, suitable for web development, system administration, scripting and databases.
 
-**Cons**
+#### **Cons**
 Ruby has a slower performance compared to some languages like Java, C or C++ because Ruby is an interpreted language, while Java, C and C++ are compiled languages. But base on what we use it for, it may not be something we need to worry about. Ruby is good enough on web applications but might not be a good choice for machine learning. Ruby is extremely flexible, for example we can use and, or, not instead of or &&, || and !. And there is often more than one way of doing things, developers can come up with different solutions to solve the same problem, even with unconventional ones. That means it can be hard to detect any errors and debug.
 
 ### **JavaScript**
 JavaScript(JS) is designed by Brendan Eich of Netscape back in the mid-1990s. Compare to Ruby which is a class-based object-oriented language, JS is a prototype-based object-oriented language. There are no classes in JS rather it uses the constructor function to define behaviors and reuse them by the prototype. Along the side of HTML and CSS, JS is one of the key technologies of World Wide Webs(WWW). JS converts the web page from a static page into an interactive page to improve the user experiences. Besides adding interactive on the web pages, it can also use on building web servers, developing server applications using Node.js, and on game development. Unlike Ruby, there is a set of rules on JS syntax: Whitespace can impact semantics as there is a feature called automatic semicolon insertion. This feature will add semicolons automatically after certain ECMAScript statements such as variable statements, expression statements, etc. That's why proper indentation is important. JS uses var, let and const keywords pair with camelCase to declare and naming a variable.
 
-**Pros**
+#### **Pros**
 Since JS is an interpreted language and also a client-side script, it can be run immediately within the client-side browser which minimizes the speed it takes to process, and because of the client-side aspect, it reduces the demand on servers. It is easy to learn and implement due to its simple structure. It works well with other languages and can be used on different applications. Same as Ruby, JS has loads of third-party add-ons to extend the functionality. Due to its popularity, there are numerous resources online to help us work with this language.
 
-**Cons**
+#### **Cons**
 Although client-side is classified as one of the pros it can be a con as well. Because the JS codes are always viewable to the user, some may use them for spiteful purposes, such as using the source code without authentication, amend codes to jeopardize the security of data over the website. Because of these reasons, some people choose to disable JS. The same JS codes can be interpreted differently by different browsers. So we need to test on various platforms to ensure the codes run correctly.
 
 ## **Q8**
