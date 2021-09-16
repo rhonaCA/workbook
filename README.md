@@ -126,6 +126,57 @@ else
 end
 ```
 
+## **Q9**
+Type coercion means the process of converting values from one data type to another. For example we can use .to_s to convert an integer to a string or use .to_i to convert a string to an integer. In Ruby, there are explicitly and implicitly convention methods.
+The explicit convention method will convert an object from one data type to another type to have a decent representation of the preferred type. Common ones are .to_s, .to_i, .to_a, .to_h. For instance, .to_s return a string representation of an object for display purposes.
+Here’s an example on the ShoppingList class, we can use .to_s to define how we want to present the instance variables, in this case, we return them in string interpolation.
+```ruby
+class ShoppingList
+    attr_reader :item, :quantity
+
+    def initialize(item, quantity)
+        @item = item
+        @quantity = quantity 
+    end
+
+    def to_s
+        "#{@quantity} #{@item}"
+    end
+end
+```
+So now we have a string representation of the ShoppingList class and can be used nicely later when we print them out.
+```ruby
+shopping_list = ShoppingList.new("apple", 2)
+puts "I need to buy #{shopping_list}"
+
+# => I need to buy 2 apple
+```
+The implicit convention method will convert an object to another data type that behaves likes the desired type and the reason it is called implicit as Ruby will call it automatically whenever it needs to. Common ones are .to_str, .to_int, .to_ary, .to_hash. For instance, Ruby use .to_str implicit convention method to concatenate strings.
+Same we are using the ShoppingList class as an example. If we want to use concatenation to print out the sentence instead of string interpolation, it won’t work, it will throw a typeerror:
+```ruby
+shopping_list = ShoppingList.new("apple", 2)
+puts "I need to buy" + shopping_list
+
+# => no implicit conversion of ShoppingList into String (TypeError)
+```
+This is because ShoppingList is not an actual string object, it just presents like a string. We need to tell Ruby that it is a string-like object so we can use concatenation on it. We can do it with to_str.
+```ruby
+class ShoppingList
+    ...
+
+    def to_str
+        "#{@quantity} #{@item}"
+    end
+end
+```
+Now when we concatenate a string to the ShoppingList object, it will return a string object.
+```ruby
+shopping_list = ShoppingList.new("apple", 2)
+puts "I need to buy " + shopping_list
+
+# => I need to buy 2 apple
+```
+
 ## **Q10**
 Data types represent different types of data. In Ruby, they are implemented as classes as Ruby is an Object-Oriented language. data types in Ruby include string, numbers, boolean, arrays, hashes and symbols.
 
