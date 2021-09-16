@@ -431,6 +431,15 @@ cuisine = {
 }
 ```
 
+## **Q11**
+I will assume this restaurant still has back of the house as there is no point to keep opening when there are no chefs to cook. So all the front of the house are gone, I am thinking to place a tablet at the front door for customers to place the order themselves, after payment, the tablet will assign a table number to customers so they can sit at a table that we know. A display screen will be placed at the pick-up window, the table number will pop up on the screen when the food is ready, then the customer can come and grab the food. <br/>
+Here are the classes that I have:<br/>
+![Preview](Q11.jpeg)
+I have a master class: **restaurant** and two subclasses: **staff** and **equipment to replace front of house**. Under staff, there are two subclasses which are **front of house** and **back of house**. We can dismiss the **front of house** as they are all gone. There are two attributes in the** back of house** class: **chefs** and **dishwashers**. They are the only ones in the restaurant and keep it running.<br/>
+Under **equipment to replace front of house** class, there are two sub classes: **tablets for ordering** and **display screen for collection**. Firstly the **tablets for ordering** class, as all the front of the house are gone, we need something to replace them so our customer still can order food of their choice. This class has menu, prices and EFTPOS machine as the attributes. Customers can check out what food they can order, how much are they and make payment via the tablet.<br/>
+Under this class is a subclass **ordering**. This includes attributes: order details, total price, paid or not paid and the designated table number. Also two methods: send the order to the back of the house after payment and assign a table number to customers. This class handles everything related to ordering.<br/>
+Another subclass under **equipment to replace front of house** is **display screen for collection**. This contains attributes table number, is the food ready and is the food has been collected by customers. Pair with two methods: display table number on the screen when the food is ready and option for customers to confirm they have collected the food. This class handles everything related to food deliver from kitchen to customers. 
+
 ## **Q12**
 1. We want to prompt user for input but there is no question has been asked so the user will not have idea what they should type. I will add below to the beginning of the codes. 
 
