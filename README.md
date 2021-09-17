@@ -212,6 +212,27 @@ to_do.to_s
 # => You have 2 items left on your to-do list, including finish workbook, cook dinner.
 ```
 
+## **Q5**
+Interpreters and compilers are both used to translate a program from programming language to machine language. Programs are written in a high-level language (language that is understandable by humans) are either executed directly by some sort of interpreter or converted into machine code by a compiler so the CPU can execute the codes. 
+
+## **Interpreters**
+An interpreter is a program that directly executes instructions written in a programming language without converting them to machine code before the program run. Instead, each statement will be converted into machine code line by line when the program is running. 
+There is no linking of files or generate any machine code, unlike the compiler. As an interpreter will not generate any output program or object code, it needs to evaluate the program every time during execution. But because it doesn’t generate any output, the interpreter is good for memory efficiency. It uses less time to analyze the source code as unlike the compiler it reads line by line when the program is running, thus the overall execution is comparatively slower than a compiler. Since the nature of reading statements line by line, if we have any errors in the program, they will be displayed the same way. We must correct the error before the interpreter interprets the next line of code. Unlike compiled programs, interpreted programs can only run on the computers that have the respective interpreters, so if users don’t have the corresponding interpreter, they will need to download one to run the program. Interpreted programming languages include Python, Ruby, Perl, PHP, etc. Here are two types of interpreters: 
+### **Bytecode Interpreter**
+A bytecode program is executed by parsing and executing the instructions directly. Each instruction starts with a byte so bytecode interpreters have up to 256 instructions. Bytecode interpreter is very portable. Dynamic translators or JIT (just-in-time) compilers translate bytecode into machine code at runtime. 
+
+### **Threaded code interpreter**
+A threaded code interpreter uses pointers instead of bytes for the instruction. Each instruction is a word that directs to a function or an instruction sequence. The number of instructions is restricted by the available address and memory space. 
+ 
+<br/>
+
+## **Compiler**
+Compiler converts an entire program into machine code (AKA binary code) before program run then executed directly by the computer hardware. The compiler starts with creating the program, the parse all language statement to check the correctness. If there is any error, it will display all errors and warnings all at once, and we must fix them beforehand if we want to compile successfully. After fixing all errors, the compilers will convert the entire source code to machine code. It links different code files into a runnable program then runs the program. Once the program has complied, its source code is not useful for running the code unless you make any change on the program, this is different from the interpreter as it relies on source code. Since the compiler will generate object code that requires linking later, it needs more memory compared to an interpreter. Although it takes a large amount of time to analyze the source code  (because it converts the entire program) but the overall execution time is comparatively faster than interpreters. Compiled programming languages include C, C++, C#, etc. Here are two types of compilers:
+### **Cross-compiler**
+A cross-compiler is capable to produce codes for different CPU or operating systems than the one on which the cross-compiler itself runs.
+### **Bootstrap compiler**
+A bootstrap compiler is a compiler written in the language that intends to compile (self-compiling compiler).      
+
 ## **Q6**
 ### **Ruby**
 Ruby is designed and developed by Yukihiro “Matz” Matsumoto in 1995, inspired by his favorite languages (Perl, Smalltalk, Eiffel, Ada, and Lisp) to form a new language that focuses on simplicity and productivity. It can be used for webpages, interfacing with databases and generating dynamic content. Ruby is an object-oriented programming language (OOP) that uses classes as blueprints for objects. In Ruby, everything is an object. Strings, numbers, and Boolean are all objects. The syntax is like human language, easy to read and write, also very clean: no need to put semicolons (;) at the end of each statement if we put each statement on a new line. Indentation is not needed for Ruby, but we still use it for readability. Ruby use # to start a comment on a new line or after a statement. For naming method, Ruby uses class keyword with PascalCase to define a class, and def keyword with snake_case to define a method.
