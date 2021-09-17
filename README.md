@@ -226,7 +226,7 @@ A threaded code interpreter uses pointers instead of bytes for the instruction. 
  
 <br/>
 
-## **Compiler**
+## **Compilers**
 Compiler converts an entire program into machine code (AKA binary code) before program run then executed directly by the computer hardware. The compiler starts with creating the program, the parse all language statement to check the correctness. If there is any error, it will display all errors and warnings all at once, and we must fix them beforehand if we want to compile successfully. After fixing all errors, the compilers will convert the entire source code to machine code. It links different code files into a runnable program then runs the program. Once the program has complied, its source code is not useful for running the code unless you make any change on the program, this is different from the interpreter as it relies on source code. Since the compiler will generate object code that requires linking later, it needs more memory compared to an interpreter. Although it takes a large amount of time to analyze the source code  (because it converts the entire program) but the overall execution time is comparatively faster than interpreters. Compiled programming languages include C, C++, C#, etc. Here are two types of compilers:
 ### **Cross-compiler**
 A cross-compiler is capable to produce codes for different CPU or operating systems than the one on which the cross-compiler itself runs.
