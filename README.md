@@ -317,10 +317,11 @@ These principles give developers an idea of how we can request and collect perso
 Amazon.com submitted a patent application for their now well-known "One-click" shopping in 1997 and has been granted the United States Patent Number 5,960,411 on September 28, 1999. "One-click" shopping is an online system that allows customers to enter their credit card details and address just once for future purchases. When they want to purchase again from the website, what they need to do is just one mouse-click to make the purchase, no need to go through the virtual shopping cart process again. Amazon filed a lawsuit in the federal district court of Seattle against Barnesandnoble.com just 23 days after the "one-click" patent was issued. Amazon advised their "Express Lane" shopping process infringed their new patent. Barnes & Noble had two purchasing options: one was the virtual shopping cart that customer can add their wanted items in, then check out when the shopping is finished. The second option was "Express Lane" which allowed registered customers to bypass the shopping cart and purchase a book with a single mouse click. Barnes & Noble uses the feature "cookies" to recognize the customers, associate their orders with corresponding credit and shipping information provided by the customers previously, which were stored in Barnes & Noble's server. On December 1, 1999, the count agreed with Amazon.com and ordered Barnes & Noble to remove the "Express Lane" shopping option from its website. Barnes & Noble appealed but the court upheld the decision, "Express Lane" was removed. Amazon's "one-click" patent expired in September 2017, although they no longer have the exclusivity of the one-click purchase, this innovation has already brought them enormous wealth.
 <br/><br/>
 Amazon and Barnes & Noble were using different methods to achieve the same functionality. Amazon spent hours and dollars to develop this online shopping system while Barnes & Noble used a browser feature to enable them to do the same thing. This was a US patent case, but if I brought it into Australia, it might have a different result. According to Australia Intellectual Property Laws, they focus on whether the 'substance' of the invention is technical innovation (patentable) or a business innovation (non-patentable) on the computer-implemented inventions. Technical innovation means the innovation allows the computer to perform an action that couldn't perform before, for example, the innovation is about a new method to store data more efficiently than what was known before. And business innovation they used computer's known function (cookies - help the website to keep track of user's visits and activity) and the only innovations lie inside a way of doing business. Amazon's "one-click" will fall into technical innovation as they patented on their system. Barnes & Noble's "Express Lane" used the computer's known function (cookies - help the website to keep track of user's visits and activity) instead of creating software or system by using Amazon's source codes. According to Copyright Act, it is the code is protected not the function (bypass the shopping cart process and finalize the purchase with a single mouse click). So Barnes & Noble may have a different result if it was happened in Australia as Amazon patented their system but not the idea/ function.
-<br/>
-From this case study, the biggest takeaway is if the software is patentable, we need to go and get it patented. It is one of the ways to protect our IP. Also, we can protect our software by copyright law as well. A computer program is identified as literary work and the source code is automatically covered by Copyright Act. However copyright law is different in different countries, if we want our software to be protected globally, we need to look into the law in different countries.
-<br/>
+<br/><br/>
+From this case study, some takeaways incluldes if the software is patentable, we need to go and get it patented. It is one of the ways to protect our IP. Also, we can protect our software by copyright law as well. A computer program is identified as literary work and the source code is automatically covered by Copyright Act. However copyright law is different in different countries, if we want our software to be protected globally, we need to look into the law in different countries as well.
+<br/><br/>
 When we are developing new software, we need to be aware of the codes that we type. As I said before Copyright Act protects the source code, not the function. It is fine to make software that has the same function as another one but if our codes have been found out are too identical or similar to them, we may infringe the copyright law.
+<br/><br/>
 It would be best to seek professional advice if we are ever afraid our software or product infringes any laws.
 
 ## **Q8**
@@ -344,11 +345,13 @@ else
 end
 ```
 
-**Ternary operator** can be used as a shorthand version of the if/else statement and it takes three arguments. The first argument can be any expression, as long as it returns a boolean value. The second argument is the codes that will be executed when the expression returns true and the third argument is the codes that will be run when the expression returns false. The syntax looks like this: `boolean ? Execute this code if true : Execute this code if false`
+**Ternary operator** can be used as a shorthand version of the if/else statement. It takes three arguments: the first argument can be any expression, as long as it returns a boolean value. The second argument is the codes that will be executed when the expression returns true and the third argument is the codes that will be run when the expression returns false. The syntax looks like this: `boolean ? Execute this code if true : Execute this code if false`
 ```ruby
 water = true
 
 puts water ? "No need to water the plants today" : "Water the plants today"
+
+# => No need to water the plants today
 ```
 
 ### **elsif statement**
@@ -373,18 +376,22 @@ unless need_fuel
 else
 	puts "Time to get some fuel"
 end
+
+# => No need to get fuel
 ```
 
 We can use a shorthand if there is only a single line code and the syntax looks like this: `codes that will execute unless boolean` 
 ```ruby
 need_fuel = false
+
 puts "No need to get fuel" unless need_fuel
 ```
 
 ### **case statement**
 A case statement can be used when we have multiple options. We can use elsif statement for the same situation but the case statement creates simpler, neater, easy-to-read branches. We set a variable or an expression and use the case keyword to get the variable input and use by when keyword, which is used to check for the condition. Lastly, we use else to act as a default, if none of the conditions match, the code below else will execute.
 ```ruby
-battery = 30
+battery = 25
+
 case battery
 when 0
 	puts "You ran out of battery"
@@ -397,11 +404,15 @@ when 81..100
 else
 	puts "Error! Invalid value (#{battery})"
 end
+
+# => You need to charge your phone, battery is nearly die
 ```
 
 ## **Q9**
 Type coercion means the process of converting values from one data type to another. For example we can use .to_s to convert an integer to a string or use .to_i to convert a string to an integer. In Ruby, there are explicitly and implicitly convention methods.
+<br/><br/>
 The explicit convention method will convert an object from one data type to another type to have a decent representation of the preferred type. Common ones are .to_s, .to_i, .to_a, .to_h. For instance, .to_s return a string representation of an object for display purposes.
+<br/><br/>
 Here’s an example on the ShoppingList class, we can use .to_s to define how we want to present the instance variables, in this case, we return them in string interpolation.
 ```ruby
 class ShoppingList
@@ -420,14 +431,17 @@ end
 So now we have a string representation of the ShoppingList class and can be used nicely later when we print them out.
 ```ruby
 shopping_list = ShoppingList.new("apple", 2)
+
 puts "I need to buy #{shopping_list}"
 
 # => I need to buy 2 apple
 ```
 The implicit convention method will convert an object to another data type that behaves likes the desired type and the reason it is called implicit as Ruby will call it automatically whenever it needs to. Common ones are .to_str, .to_int, .to_ary, .to_hash. For instance, Ruby use .to_str implicit convention method to concatenate strings.
+<br/><br/>
 Same we are using the ShoppingList class as an example. If we want to use concatenation to print out the sentence instead of string interpolation, it won’t work, it will throw a typeerror:
 ```ruby
 shopping_list = ShoppingList.new("apple", 2)
+
 puts "I need to buy" + shopping_list
 
 # => no implicit conversion of ShoppingList into String (TypeError)
@@ -445,17 +459,17 @@ end
 Now when we concatenate a string to the ShoppingList object, it will return a string object.
 ```ruby
 shopping_list = ShoppingList.new("apple", 2)
+
 puts "I need to buy " + shopping_list
 
 # => I need to buy 2 apple
 ```
 
 ## **Q10**
-Data types represent different types of data. In Ruby, they are implemented as classes as Ruby is an Object-Oriented language. data types in Ruby include string, numbers, boolean, arrays, hashes and symbols.
+Data types represent different types of data. In Ruby, they are implemented as classes as Ruby is an Object-Oriented language. Data types in Ruby include string, numbers, boolean, arrays, hashes and symbols.
 
 ### **Strings**
 A string is made up of a group of characters that represent a word or a sentence. They are defined by enclosing with single ('string') or double ("string") quotes. In Ruby, it prefers a single quote on a string when we are not using string interpolation or special symbols. If the string includes a single quote and you also want to enclose it with a single quote, you need to put an escape character (\) before the single quote in the string. Alternatively, you can enclose the string with a double quote.
-
 ```ruby
 puts "String Data Type"
 puts 'String Data Type'
@@ -498,6 +512,7 @@ end
 An array store a list of data that can contain different types of data. Data are separated by a comma in between them and are enclosed with a pair of square brackets. The first element of the array has an index of 0.
 ```ruby
 my_arr = ["coffee", "milk", 0.31, 50, "hello world"]
+
 puts my_arr.index("milk")
 
 # output: 1
@@ -524,29 +539,32 @@ cuisine = {
 ```
 
 ## **Q11**
-I will assume this restaurant still has back of the house as there is no point to keep opening when there are no chefs to cook. So all the front of the house are gone, I am thinking to place a tablet at the front door for customers to place the order themselves, after payment, the tablet will assign a table number to customers so they can sit at a table that we know. A display screen will be placed at the pick-up window, the table number will pop up on the screen when the food is ready, then the customer can come and grab the food. <br/>
+I will assume this restaurant still has back of the house as there is no point to keep opening when there are no chefs to cook. So all the front of the house are gone, I am thinking to place a tablet at the front door for customers to place the order themselves. After payment, the tablet will assign a table number to customers so they can sit at a table that we know where. A display screen will be placed at the pick-up window where chef brings out the food, the table number will pop up on the screen when the food is ready, then the customer can go and grab the food. 
+<br/><br/>
 Here are the classes that I have:<br/>
 ![Preview](Q11.jpeg)
-I have a master class: **restaurant** and two subclasses: **staff** and **equipment to replace front of house**. Under staff, there are two subclasses which are **front of house** and **back of house**. We can dismiss the **front of house** as they are all gone. There are two subclasses under the **back of house** class: **chefs** and **dishwashers**. They are the only ones in the restaurant and keep it running. **Chefs** class contains attributes order details and if food is ready. Also has methods: receive order details from the tablets, cook the ordered food and enter table number onto the display screen when food is ready. **Dishwashers** class has attributes: if customers have left and table number. Methods include clean the table after customers have left, update the tablet with table numbers that are cleaned so it can be re-assign to new customers.<br/>
-Under **equipment to replace front of house** class, there are two sub classes: **tablets for ordering** and **display screen for collection**. Firstly the **tablets for ordering** class, as all the front of the house are gone, we need something to replace them so our customer still can order food of their choice. This class has menu, prices and EFTPOS machine as the attributes. Customers can check out what food they can order, how much are they and make payment via the tablet.<br/>
-Under this class is a subclass **ordering**. This includes attributes: order details, total price, paid or not paid and the designated table number. Also two methods: send the order to the back of the house after payment and assign a table number to customers. This class handles everything related to ordering.<br/>
+I have a master class: **restaurant** and two subclasses: **staff** and **equipment to replace front of house**. Under staff, there are two subclasses which are **front of house** and **back of house**. We can dismiss the **front of house** as they are all gone. There are two subclasses under the **back of house** class: **chefs** and **dishwashers**. They are the only ones in the restaurant and keep it running. **Chefs** class contains attributes order details and if food is ready. Also has methods: receive order details from the tablets, cook the ordered food and enter table number onto the display screen when food is ready. **Dishwashers** class has attributes: if customers have left and table number. Methods include clean the table after customers have left, update the tablet with table numbers that are cleaned so it can be re-assign to new customers.
+<br/><br/>
+Under **equipment to replace front of house** class, there are two sub classes: **tablets for ordering** and **display screen for collection**. Firstly the **tablets for ordering** class, as all the front of the house are gone, we need something to replace them so our customer still can order food of their choice. This class has menu, prices and EFTPOS machine as the attributes. Customers can check out what food they can order, how much are they and make payment via the tablet.
+<br/><br/>
+Under this class is a subclass **ordering**. This includes attributes: order details, total price, paid or not paid and the designated table number. Also two methods: send the order to the back of the house after payment and assign a table number to customers. This class handles everything related to ordering.
+<br/><br/>
 Another subclass under **equipment to replace front of house** is **display screen for collection**. This contains attributes table number, is the food ready and is the food has been collected by customers. Pair with two methods: display table number on the screen when the food is ready and option for customers to confirm they have collected the food. This class handles everything related to food deliver from kitchen to customers. 
 
 ## **Q12**
-1. We want to prompt user for input but there is no question has been asked so the user will not have idea what they should type. I will add below to the beginning of the codes. 
+- We want to prompt user for input but there is no question has been asked so the user have no idea what they should type. I will add below to the beginning of the codes. 
 
 ```ruby
-    print “We can convert Celsius to Fahrenheit for you, please enter a Celsius degree.”
+    print “We can convert Celsius to Fahrenheit for you, please enter a Celsius degree: ”
 ```
 
-2. User input will come with a newline character “\n” at the end as user use enter to confirm the input. We don’t want this as we are going to do some calculate with the input so 
-I will add .chomp after gets to remove “\n”. Also input from user will always be a string, we will need to convert the input to integer (.to_s) or float (.to_f) depends how accurate we want then we can do calculate with it. I will go with float this time.
+- User input will come with a newline character “\n” at the end as user use enter to confirm the input. We don’t want this as we are going to do some calculation with the input so I will add .chomp after gets to remove “\n”. Also input from user will always be a string, we will need to convert the input to integer (.to_s) or float (.to_f) depends how accurate we want then we can do calculate with it. I will go with float this time.
 
 ```ruby
     Celsius = gets.chomp.to_f
 ```
 
-3. The code works fine as it is but they are a bit too long which defy the basic principle: dry code. Instead of using 3 lines of codes to print out the output. I will use string interpolation. 
+- The code works fine as it is but they are a bit too long which defy the basic principle: dry code. Instead of using 3 lines of codes to print out the output. I will use string interpolation. 
 
 ```ruby
     puts “The result is: #{fahrenheit}.”
@@ -565,7 +583,7 @@ I will add .chomp after gets to remove “\n”. Also input from user will alway
 arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
 
 arr.each_with_index do |num, index|
-		# As we only want to run the loop up till the second last so it is arr.size - 2
+    # As we only want to run the loop up till the second last so it is arr.size - 2
     if index <= arr.size - 2 && arr[index] > arr[index + 1]
         # Store the value of arr[index] into variable x so I can assign it to arr[index + 1]
         x = arr[index] 
