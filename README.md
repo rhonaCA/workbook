@@ -88,7 +88,7 @@ arr2 = ["orange", 123, 10.5, true, {HTML: 16}]
 ```
 Or by calling the new method with arguments to create a new array. We can define the initial size and set a default object of the array.
 ```ruby
-Array.new(5, "new")
+p Array.new(5, "new")
 
 # => ["new", "new", "new", "new", "new"]
 ```
@@ -172,13 +172,12 @@ class Stack
     end
 
     def size
-        puts @items.length
+        @items.length
      end
 
     def to_s
         @items
     end
-    
 end
 ```
 We create a new Stack object by calling the new method:
@@ -187,14 +186,14 @@ stack = Stack.new
 ```
 We then use the push method to add an item to the stack and use pop method to remove an item from the stack. To get the number of items in the stack, we use the size method:
 ```ruby
-stack.push("apple")
-# => @items = ["apple"]
-stack.push("orange")
-# => @items = ["apple", "orange"]
-stack.pop
-# => @items = ["apple"]
-stack.size
-# => 2
+p stack.push("apple")
+# => ["apple"]
+p stack.push("orange")
+# => ["apple", "orange"]
+p stack.pop
+# => ["orange"]
+p stack.size
+# => 1
 ```
 We can use a stack to keep track of work left to do and leaving the most recent on top. Please see the below example. I have an empty array to keep my to-do tasks and a class variable count to keep track of how many tasks are in total after I add or remove tasks.
 ```ruby
@@ -385,6 +384,8 @@ We can use a shorthand if there is only a single line code and the syntax looks 
 need_fuel = false
 
 puts "No need to get fuel" unless need_fuel
+
+# => No need to get fuel
 ```
 
 ### **case statement**
@@ -502,10 +503,10 @@ if apple > orange
 elsif apple == orange
 	puts "Apple is same price as orange"
 else
-	puts "Apple is cheaper then orange"
+	puts "Apple is cheaper than orange"
 end
 
-# output: Apple is cheaper then orange
+# output: Apple is cheaper than orange
 ```
 
 ### **Arrays**
@@ -593,6 +594,10 @@ arr.each_with_index do |num, index|
         break
     end
 end
+
+p arr
+
+# => [5, 22, 29, 19, 39, 51, 78, 96, 84]
 ```
 
 ## **Q14**
@@ -615,6 +620,10 @@ End
 ## **Q15**
 
 ```ruby
+# Set variable values for example
+raining = true
+temperatue = 14
+
 if raining == true
     puts temperature < 15 ? "It's wet and cold" : "It's warm and raining"
 else
