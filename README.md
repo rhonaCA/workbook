@@ -278,8 +278,30 @@ Under copyright law, attribution is an **acknowledgment** to the copyright holde
 <br/><br/>
 These all ensure developers' creations can be protected and can't be reused by someone else without permission. Likewise, with proper attribution, developers can quote or use others' work without worry about breaking the law.
 
-### **Freedom of thought, conscience, speech and the media**
+### **Access to a user’s personal information** 
+Lots of time, developers may need to request and collect personal information from users, especially when the websites or software are related to shopping, make reservations on services, banking, etc. It is very important we as a developer has built some strong protections to protect user’s privacy, and only collect necessary personal information or even sensitive information with individual’s consent. We can’t use the collected information for other purposes rather than the particular purpose for that was collected. And if we have collected some unsolicited information, we are meant to handle them properly. It is not just about ethical on doing this but also gives out an image to the users that they can trust our web site or software.
+<br/><br/>
+**Privacy Act - Australian Privacy Principles**
+<br/>
+**APP 3 – Collection of solicited personal information**
+<br/>
+This outlines an organization may only collect or request any personal information that is fairly necessary for one or more of its functions or activities. Also, an organization may only and collect and request sensitive information when the individual consents to that information to be collected.
+<br/>
+**APP 4 – Dealing with unsolicited personal information**
+<br/>
+Unsolicited personal information means that information is received by an organization when they have not taken any active steps to collect. The purpose of APP4 is to ensure the personal information that is received by an organization is under proper privacy protection, even when the organization has not solicited the information.
+<br/>
+**APP 6 – Use or disclosure of personal information**
+<br/>
+An organization can only use or disclose the personal information for their primary purpose, or a secondary purpose if there is any expectation applies. An organization may disclose personal information but not sensitive information to a related body corporate, but they can't be used for direct marketing or government-related identifiers. According to Privacy Act, sensitive information is personal information that contains information or an opinion about an individual, such as sexuality, religion or beliefs, political opinions, health, or genetic information, etc.
+<br/>
+**APP 11 - Security of personal information**
+<br/>
+An organization must take active steps to protect personal information so they aren’t misused, interference and lost, in addition unauthorized access, tempering or disclosure.
+<br/><br/>
+These principles give developers an idea of how we can request and collect personal information in a right and ethical way, what kind of personal information we can request and collect, how to handle unsolicited personal information and the importance to protect personal information. They are all listed very clear in each aspect so developers can refer easily if need to. 
 
+<br/><br/>
 
 ### **Case study**
 Amazon.com submitted a patent application for their now well-known "One-click" shopping in 1997 and has been granted the United States Patent Number 5,960,411 on September 28, 1999. "One-click" shopping is an online system that allows customers to enter their credit card details and address just once for future purchases. When they want to purchase again from the website, what they need to do is just one mouse-click to make the purchase, no need to go through the virtual shopping cart process again. Amazon filed a lawsuit in the federal district court of Seattle against Barnesandnoble.com just 23 days after the "one-click" patent was issued. Amazon advised their "Express Lane" shopping process infringed their new patent. Barnes & Noble had two purchasing options: one was the virtual shopping cart that customer can add their wanted items in, then check out when the shopping is finished. The second option was "Express Lane" which allowed registered customers to bypass the shopping cart and purchase a book with a single mouse click. Barnes & Noble uses the feature "cookie" to recognize the customers, associate their orders with corresponding credit and shipping information provided by the customers previously, which were stored in Barnes & Noble's server. On December 1, 1999, the count agreed with Amazon.com and ordered Barnes & Noble to remove the "Express Lane" shopping option from its website. Barnes & Noble appealed but the court upheld the decision, "Express Lane" was closed. Amazon's "one-click" patent expired in September 2017, although they no longer have the exclusivity of the one-click purchase, this innovation has already brought them enormous wealth.
