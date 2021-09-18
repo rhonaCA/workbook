@@ -661,3 +661,106 @@ else
 end
 
 ```
+
+## **Reference**
+AmberBit (2014, September 9). Ruby – the bad parts. Things we don’t enjoy about Ruby. Retrieved from
+https://www.amberbit.com/blog/2014/9/9/ruby-the-bad-parts/ 
+
+Australia Federal Register of Legislation (2021, January 28). Copyright Act 1968. Retrieved from
+https://www.legislation.gov.au/Details/C2021C00044 
+
+Australian Trade and Investment Commission (2013, July 17) Australian Intellectual Property laws. Retrieved from
+https://www.austrade.gov.au/international/invest/guide-to-investing/running-a-business/understanding-australian-business-regulation/australian-intellectual-property-laws 
+
+Bellis M. (2021, January 1). Who Created Wi-Fi, the Wireless Internet Connection? Retrieved from https://www.thoughtco.com/who-invented-wifi-1992663
+
+Berners-Lee, T. (1992, November 3). Review —/Erwise. Retrieved from https://www.w3.org/History/19921103-hypertext/hypertext/Erwise/Review.html  
+
+CableFree. (2017, May 18). The History of WiFi: 1971 to Today. Retrieved from
+https://www.cablefree.net/wireless-technology/history-of-wifi-technology/
+
+Carr D, Gray A, Watkins E, Yang G (2000, June 4). Software Patents and their Implications. Retrieved from https://cs.stanford.edu/people/eroberts/courses/cs181/projects/1999-00/software-patents/ 
+
+Castello J (2017, September 14). How to Use Stacks in Ruby to Solve Problems. Retrieved from https://www.rubyguides.com/2017/03/computer-science-in-ruby-stacks/ 
+
+CERN (2019). The birth of the Web. Retrieved from https://home.cern/science/computing/birth-web/short-history-web
+
+CloudFlare. What is a packet? | Network packet definition. Retrieved from https://www.cloudflare.com/en-au/learning/network-layer/what-is-a-packet/
+
+CNET (2002, January 2). Amazon sues Barnesandnoble.com over patent. Retrieved from https://www.cnet.com/news/amazon-sues-barnesandnoble-com-over-patent/ 
+
+codementor (2015, January 14). Web Development Tutorial: Understanding how to use the Browser Developer Tools. Retrieved from https://www.codementor.io/learn-development/javascript-css-html-tutorial-front-end-development-tools 
+
+Copyright Agency (2015, September 2). About copyright. Retrieved from https://www.copyright.com.au/about-copyright/ 
+
+Cossick S. (2019, June 20). Throwback Thursday: Dial-up and our fondness for the first internet connection. Retrieved from https://www.allconnect.com/blog/enduring-interest-dial-up-internet
+
+Computer Science Department, University of Cape Town (2010, June). Routers and routing. Retrieved from https://www.cs.uct.ac.za/mit_notes/web_programming/html/ch07s05.html 
+
+ecma Internation (2011, June). ECMAScript Language Specification. Retrieved from https://262.ecma-international.org/5.1/#sec-7.9 
+
+GoDaddy (2020, Jan 22). What is DNS? Retrieved from https://au.godaddy.com/help/what-is-dns-665 
+
+High Speed Internet Deals. (2019, April 27). Dial-Up Internet Service History. Retrieved from https://www.highspeedinternetdeals.com/dial-up-internet-service-history.html)
+
+History Computer. (2021, July 15). Internet Relay Chat – Complete History of IRC. Retrieved from https://history-computer.com/software/history-of-irc/
+
+Holwerda J. (2009, March 3). The World’s First Graphical Browser: Erwise. Retrieved from https://www.osnews.com/story/21076/the-worlds-first-graphical-browser-erwise/ 
+
+IP Australia (2018, November 1). Patents for computer implemented inventions (software patents). Retrieved from https://www.ipaustralia.gov.au/ip-for-digital-business/idea/software-patents 
+
+Jakubowicz J (2020, September 23). Pros and cons of Ruby software development. Retrieved from https://thecodest.co/blog/pros-and-cons-of-ruby-software-development/ 
+
+MDN Web Docs (2021, August 24). JavaScrip. Retrieved from https://developer.mozilla.org/en-US/docs/Web/JavaScript 
+
+MDN Web Docs (2021, September 3). What are browser developer tools? Retrieved from https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools 
+
+Office of the Australian Information Commissioner (2019, July 22). Chapter 3: APP 3 — Collection of solicited personal information. Retrieved from https://www.oaic.gov.au/privacy/australian-privacy-principles-guidelines/chapter-3-app-3-collection-of-solicited-personal-information/    
+
+Office of the Australian Information Commissioner (2019, July 22). Chapter 4: APP 4 — Dealing with unsolicited personal information Retrieved from https://www.oaic.gov.au/privacy/australian-privacy-principles-guidelines/chapter-4-app-4-dealing-with-unsolicited-personal-information/  
+
+Office of the Australian Information Commissioner (2019, July 22). Chapter 6: APP 6 — Use or disclosure of personal information. Retrieved from https://www.oaic.gov.au/privacy/australian-privacy-principles-guidelines/chapter-6-app-6-use-or-disclosure-of-personal-information/  
+
+Office of the Australian Information Commissioner (2019, July 22). Chapter 11: APP 11 — Security of personal information. Retrieved from https://www.oaic.gov.au/privacy/australian-privacy-principles-guidelines/chapter-11-app-11-security-of-personal-information / 
+
+Office of the Australian Information Commissioner (2019, July 21). What is personal information? Retrieved from https://www.oaic.gov.au/privacy/your-privacy-rights/your-personal-information/what-is-personal-information/ 
+
+Out-Law News (2002, March 7). Amazon.com and Barnes & Noble.com settle 1-Click patent lawsuit. Retrieved from https://www.pinsentmasons.com/out-law/news/amazoncom-and-barnes--noblecom-settle-1-click-patent-lawsuit 
+
+pueple. (2014, May 25). The History of WiFi. Retrieved from
+https://purple.ai/blogs/history-wifi/ 
+
+Ricardo(2014, March 18). Explicit vs. implicit conversion methods. Retrieved from https://bigardone.dev/blog/2014/03/18/explicit-vs-implicit-conversion-methods  
+
+RubySteps(2020, September 2). Customize your Ruby classes with to_s and inspect. Retrieved from https://www.rubysteps.com/customize-your-ruby-classes-with-to-s-and-inspect 
+
+Sackman G. (1992, July 31). SprintLink Commercial Availability Announced (fwd). Retrieved from https://lists.h-net.org/cgi-bin/logbrowse.pl?trx=vx&list=edtech&month=9207&week=&msg=An61j4s0%2BR1UHNuEZOgGfw&user=&pw= 
+
+Sassi R (2021, January 19). Compiler vs. Interpreter: Know the Difference And When To Use Each Of Them. Retrieved from 
+https://betterprogramming.pub/compiler-vs-interpreter-d0a12ca1c1b6 
+
+S. Gillis A. Zola A. (2000). network packet. Retrieved from
+https://www.techtarget.com/searchnetworking/definition/packet 
+
+Smith J (2021, August 27). Compiler vs Interpreter: Complete Difference Between Compiler and Interpreter. Retrieved from https://www.guru99.com/difference-compiler-vs-interpreter.html 
+
+Software Testing Help (2021, August 27). All About Routers: Types of Routers, Routing Table and IP Routing. Retrieved from https://www.softwaretestinghelp.com/types-of-routers-routing-table/ 
+
+Stenberg D. History of IRC (Internet Relay Chat). Retrieved from https://daniel.haxx.se/irchistory.html 
+
+Study-CCNA (2013, April 14). HTTP and HTTPS explained. Retrieved from https://study-ccna.com/http-https/ 
+
+Thomas D, Hunt A. (2001). Programming Ruby - The Pragmatic Programmer's Guide. Retrieved from https://ruby-doc.com/docs/ProgrammingRuby/ 
+
+Web Developers Notes. (2008, September 15). Erwise – world’s first graphical web browser. Retrieved from https://www.webdevelopersnotes.com/erwise-worlds-first-graphical-web-browser 
+
+Williams L. (2021, August 28). IPv4 vs IPv6: What’s the Difference Between IPv4 and IPv6? Retrieved from https://www.guru99.com/difference-ipv4-vs-ipv6.html 
+
+Williams L. (2021, August 27). HTTP vs HTTPS: What is Difference Between HTTP and HTTPS? Full Form. Retrieved from https://www.guru99.com/difference-http-vs-https.html 
+
+wpbeginner (2009). What is: IP Address. Retrieved from https://www.wpbeginner.com/glossary/ip-address/ 
+
+wpbeginner. (2021, March 26). Beginner’s Guide: What is a Domain Name and How do Domains Work? Retrieved from https://www.wpbeginner.com/beginners-guide/beginners-guide-what-is-a-domain-name-and-how-do-domains-work/ 
+
+World Wide Web Foundation. (2008). History of the Web. Retrieved from https://webfoundation.org/about/vision/history-of-the-web/ 
+
